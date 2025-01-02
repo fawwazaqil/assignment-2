@@ -1,0 +1,658 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+/* Fawwaz start code here ------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.border-icon {
+  margin-top: 10px;
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  background-color: #000000; /* Dark background color */
+  border-radius: 50%; /* Makes it circular */
+  display: flex;align-items: center;justify-content: center;
+  cursor: pointer;
+}
+
+.strike-styling{
+  color: #acacac87;
+  font-size: 20px;
+}
+
+.harga-styling{
+  font-size:20px;
+}
+
+.encode-sans {
+  font-family: "Encode Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+  font-variation-settings:100px;
+}
+
+h1{
+  font-size: 90px;
+  margin: 8px;
+}
+h2{
+  font-family:"Encode Sans", serif;
+  font-style:normal;
+  font-size: 50px;
+  font-weight: 100px;
+}
+
+.h1-width{
+  width: 10px;
+}
+
+body{
+  background-color: #F4CE47;
+}
+.class-header {
+  display:flex;
+  flex-direction:row;flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #2A2C2E;
+  color: #FFF;
+  gap:normal;
+  border-radius:25px;
+}
+.class-header-margin{
+}
+
+.card-flexbom{
+  display: flex;flex-wrap: wrap;flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.navigation{
+  background-color: #2A2C2E;  color: #FFF;
+  display: flex;
+  flex-direction: row;
+  gap:  100px;
+  padding: 50px;
+
+
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.logo-title{
+  display: flex;
+  flex-direction:row;
+  gap: 10px;
+  padding: 40px;
+  line-height: 50px; /* bawak turun tulisan */
+
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+
+}
+
+
+.logo {
+  width: 50px; /* Adjust the size */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Center or align as needed */
+}
+
+
+.icons-buttons{
+  display: flex;flex-direction: row;
+  background-color: #2A2C2E;
+  flex-direction:row;
+  gap: 10px;
+  border-radius: 25px;
+}
+
+.icons{
+  background-color: #2A2C2E;
+  display:flex;
+  flex-direction:row;
+  gap: 25px;
+  padding: 50px;
+}
+.buttons{
+  border-radius: 25px; background-color: #2A2C2E;
+  padding: 25px;
+
+}
+.button-login{
+  padding: 25px;
+  background-color: #F4CE47;
+  border-radius:25px;
+  color: #000;
+}
+
+.button-browse-now{
+  color: #F4CE47;
+  border:1px solid #F4CE47;
+  border-radius: 10px;
+  padding: 15px;
+}
+/* 
+1. font-size
+2. padding-left
+3. padding-right
+4. font-family
+margin-top
+*/
+.p-margin-bottom {
+  margin-right: 450px;
+  margin-bottom: 100px;
+}
+
+
+.card-besar-1{
+  background-color: #2A2C2E;
+  color: #FFF;
+  padding: 50px;
+  border-radius: 25px;
+  width: 781px;
+
+}
+.card-besar-2{
+  background-color: #6baebd;
+  padding: 50px;
+  border-radius: 25px;
+  width: 781px;
+  height: 370.172px;
+  
+}
+
+
+
+.styling-img{
+  border-radius: 20px;
+  padding-right: 10px;
+}
+
+.comment{
+  border-radius: 10px;
+  border: #000 solid;
+  width: 50px;
+  height: 20px;
+
+}
+.star{
+  border-radius: 10px;
+  border: #000 solid;
+  width: 100px;
+  height: 20px;
+}
+.harga{
+  font-family: 'Courier New', Courier, monospace;
+  border: #000 solid;  border-radius: 10px;
+  width: 150px;
+  height: 20px;
+}
+
+.bookmark{
+  border-radius: 10px;
+  border: #000 solid;
+  width: 100px;
+  height: 20px;
+}
+
+.bestsellers{
+  background-color: #2A2C2E;
+  padding: 20px;
+}
+
+.buku-size
+{
+  display: flex;flex-wrap: wrap;flex-direction: row;
+  background-color: #2A2C2E;
+  --box-min-width: 300px;
+  --box-gap:16px;
+  --parrent-padding:16px;
+  --column:3;
+
+  gap:var(--box-gap);
+  padding:var(--parrent-padding);
+  max-width:calc(var(--box-min-width  * var(--column))+var(--box-gap)*calc(var(--column)-1)+var(--parrent-padding)*2);
+
+}
+.buku-top-left{
+
+  background-color: #FFFFFF;
+  display: flex;flex-wrap: wrap;flex-direction: row;
+  flex: 1;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+
+
+/* from css.gg */
+.gg-search {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+  border-radius: 100%;
+}
+.gg-search::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  width: 2px;
+  height: 8px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 12px;
+}
+
+.gg-bookmark,
+.gg-bookmark::after {
+  display: block;
+  box-sizing: border-box;
+  border-top-right-radius: 3px;
+}
+.gg-bookmark {
+  border: 2px solid;
+  border-bottom: 0;
+  border-top-left-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  transform: scale(var(--ggs, 1));
+  width: 16px;
+  height: 18px;
+}
+.gg-bookmark::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(-45deg);
+  top: 9px;
+}
+
+.bookmark-styling{
+  border: #000 solid;
+  border-radius: 5px;
+}
+.gg-shopping-bag {
+  transform: scale(var(--ggs, 1));
+}
+
+.gg-shopping-bag,
+.gg-shopping-bag::after {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 3px;
+}
+.gg-shopping-bag::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 6px;
+  border-bottom-left-radius: 120px;
+  border-bottom-right-radius: 120px;
+  border-top: 0;
+  top: 2px;
+  left: 3px;
+}
+
+.gg-comment {
+  margin-top:25px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 20px;
+  height: 16px;
+  border: 2px solid;
+  border-bottom: 0;
+  box-shadow:
+    -6px 8px 0 -6px,
+    6px 8px 0 -6px;
+}
+.gg-comment::after,
+.gg-comment::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 8px;
+}
+.gg-comment::before {
+  border: 2px solid;
+  border-top-color: transparent;
+  border-bottom-left-radius: 20px;
+  right: 4px;
+  bottom: -6px;
+  height: 6px;
+}
+.gg-comment::after {
+  height: 2px;
+  background: currentColor;
+  box-shadow: 0 4px 0 0;
+  left: 4px;
+  top: 4px;
+}
+
+.gg-moon,
+.gg-moon::after {
+  margin-bottom:25px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.gg-moon {
+  overflow: hidden;
+  position: relative;
+  transform: rotate(-135deg) scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-bottom-color: transparent;
+}
+.gg-moon::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px;
+  top: 8px;
+  left: 2px;
+}
+
+.gg-bookmark-bestsellers,
+.gg-bookmark-bestsellers::after {
+  display: block;
+  box-sizing: border-box;
+  border-top-right-radius: 3px;
+}
+.gg-bookmark-bestsellers {
+  color: #ffffff;
+  border: 2px solid;
+  border-bottom: 0;
+  border-top-left-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  transform: scale(var(--ggs, 1));
+  width: 16px;
+  height: 18px;
+}
+.gg-bookmark-bestsellers::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(-45deg);
+  top: 9px;
+}
